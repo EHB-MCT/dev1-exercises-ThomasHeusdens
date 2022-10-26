@@ -33,3 +33,14 @@ export function fillAndStrokeEllipse(x,y,rX,rY){
     context.fill();
     context.stroke();
 }
+
+export function fillCircle(x,y,radius){
+    context.beginPath();
+    context.ellipse(x,y,radius,radius,0,0,Math.PI*2);
+    context.fill();
+}
+
+export function rgba(r,g,b,a){
+    let rgba = "rgba(" + r + "," + g + "," + b + "," + a + ")";
+    return rgba;
+}
