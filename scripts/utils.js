@@ -49,3 +49,11 @@ export function hsla(h,s,l,a){
     let hsla = "hsla(" + h + "," + s + "%," + l + "%," + a + ")";
     return hsla;
 }
+
+export function randomNumber(min,max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+export function calculateDistance(x1,y1,x2,y2){
+    return Math.hypot(x2-x1, y2-y1);
+}
