@@ -1,4 +1,5 @@
 "use strict";
+import * as Utils from "../../scripts/utils.js";
 
 let canvas = document.querySelector("canvas");
 canvas.width = window.innerWidth;
@@ -31,9 +32,7 @@ function drawRect() {
 
     //zon
     context.fillStyle = "#ffffc8"
-    context.beginPath();
-    context.ellipse(width/2,height/4*3,width/4 + height/4,width/4 + height/4,0,0,10,undefined);
-    context.fill();
+    Utils.fillCircle(width/2,height/4*3,width/4)
     
     //4e laag
     context.fillStyle = "#00198c";

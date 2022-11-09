@@ -11,3 +11,10 @@ body {
     top: 0;
     left: 0;
 }
+
+button, input {
+    position: relative;
+    float: left;
+    font-size: large;
+}
+

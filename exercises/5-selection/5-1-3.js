@@ -5,6 +5,7 @@ import * as Utils from "../../scripts/utils.js";
 let width = context.canvas.width;
 let height = context.canvas.height;
 
+//red white yellow
 drawRandomCircles();
 
 function drawRandomCircles() {

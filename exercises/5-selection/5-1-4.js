@@ -5,7 +5,7 @@ import * as Utils from "../../scripts/utils.js";
 let width = context.canvas.width;
 let height = context.canvas.height;
 
-//portugal
+//groene rechthoek
 drawRandomCircles();
 
 function drawRandomCircles() {
@@ -15,10 +15,10 @@ function drawRandomCircles() {
         let x = Math.random() * width;
         let y = Math.random() * height;
 
-        if(x < width/2){
-            context.fillStyle = "red";
-        } else{
+        if(x < width/3*2 && y<height/3*2){
             context.fillStyle = "green";
+        } else{
+            context.fillStyle = "white";
         }
 
         Utils.fillCircle(x,y,5);
