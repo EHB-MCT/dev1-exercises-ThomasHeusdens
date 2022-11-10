@@ -9,6 +9,12 @@ export function drawLine(x1, y1, x2, y2){
     context.stroke();
 }
 
+export function strokeRect(x,y,w,h){
+    context.beginPath();
+    context.rect(x,y,w,h);
+    context.stroke();
+}
+
 export function strokeCircle(x,y,radius){
     context.beginPath();
     context.ellipse(x,y,radius,radius,0,0,Math.PI*2);

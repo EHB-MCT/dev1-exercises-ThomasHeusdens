@@ -127,10 +127,13 @@ function drawImg() {
    context.stroke();
 
    //medial rect
-   context.rotate(45 * Math.PI / 180);
-   context.translate(393,-32);
-   context.fillStyle = 'orange'
+   context.fillStyle = "orange";
    context.beginPath();
-   context.rect(0,0,64,64);
+   context.moveTo(300,343);
+   context.lineTo(343,300);
+   context.lineTo(300,257);
+   context.lineTo(257,300);
+   context.lineTo(300,343);
+   context.lineTo(343,300);
    context.fill();
 }
